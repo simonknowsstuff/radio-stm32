@@ -38,8 +38,6 @@ void DisplayController::drawRadioScreen(uint16_t freq, uint8_t vol) {
     display.setCursor(0, 42);
     display.print("Vol: ");
     display.print(vol);
-    display.print("/");
-    display.print(VOL_MAX);
     
     // Volume bar
     display.drawRect(50, 42, 77, 8, SSD1306_WHITE);
